@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciamento de Estoque</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Gerenciamento de Estoque</h2>
+
+        <!-- Formulário para adicionar e remover produtos -->
+        <div>
+            <label for="nomeProduto">Nome do Produto:</label>
+            <input type="text" id="nomeProduto" placeholder="Nome do produto">
+
+            <label for="quantidadeProduto">Quantidade:</label>
+            <input type="number" id="quantidadeProduto" placeholder="Quantidade">
+
+            <!-- Botões de ação -->
+            <div class="button-group">
+                <button onclick="adicionarProduto()">Registrar</button>
+                <button onclick="removerProduto()">Remover Produto</button>
+                <button onclick="registrarSaida()">Registrar Saída</button>
+                <button onclick="abrirConsultaSaidas()">Consultar Saídas</button>
+                <button onclick="abrirEstoque()">Ver Estoque</button> <!-- Novo botão -->
+            </div>
+        </div>
+
+        <!-- Lista de produtos -->
+        <h3>Produtos no Estoque</h3>
+        <ul id="listaProdutos"></ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
